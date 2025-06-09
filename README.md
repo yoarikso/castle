@@ -1,2 +1,2 @@
 # jp
-personal site
+it's a personal site
