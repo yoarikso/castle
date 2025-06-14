@@ -1,8 +1,29 @@
-@import url('https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css');
-@import url('https://fonts.googleapis.com/css2?family=Inter:opsz@14..32&display=swap');
+
+:root {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    padding: 2rem;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(5, minmax(auto, 10%));
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    justify-items: stretch;
+    align-items: start;
+ }
 
 body {
     padding: 3rem;
+}
+
+footer {
+    text-align: center;
+    font-size: smaller;
 }
 
 .inter-light {
@@ -20,4 +41,4 @@ body {
     font-style: normal;
     padding: 2rem;
   }
-  
+
