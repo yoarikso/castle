@@ -1,10 +1,50 @@
+/* Fonts start here */
 
-:root {
+.inter-light {
     font-family: "Inter", sans-serif;
     font-optical-sizing: auto;
     font-weight: 300;
     font-style: normal;
     padding: 2rem;
+}
+
+.inter-regular {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    padding: 2rem;
+}
+
+.goudy-regular {
+    font-family: "Goudy Bookletter 1911", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+.host-grotesk-regular {
+    font-family: "Host Grotesk", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+/* Root starts here */
+
+:root {
+    font-family: "Goudy Bookletter 1911", serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    padding: 2rem;
+}
+
+h2, h3 {
+    font-family: "Host Grotesk", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
 }
 
 .grid {
@@ -26,19 +66,4 @@ footer {
     font-size: smaller;
 }
 
-.inter-light {
-    font-family: "Inter", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 300;
-    font-style: normal;
-    padding: 2rem;
-}
-
-.inter-regular {
-    font-family: "Inter", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
-    padding: 2rem;
-  }
 
