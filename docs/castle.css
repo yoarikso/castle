@@ -40,8 +40,8 @@
     padding: 2rem;
 
     --primary-color: #ffdb58;
-    --secondary-color: #FACC15;
-    --tertiary-color: #EAB308;
+    --secondary-color: #facc15;
+    --tertiary-color: #eab308;
 }
 
 body {
@@ -91,7 +91,7 @@ img.x-icon {
     width: 30px;
     height: 30px;
     padding: 5px;
-    margin-right: 8px;
+    margin-right: 2px;
     filter: brightness(0) invert(1);
 }
 
@@ -99,28 +99,28 @@ img.linkedin-icon {
     width: 34px;
     height: 34px;
     padding: 5px;
-    margin-right: 8px;
+    margin-right: 2px;
 }
 
 img.youtube-icon {
     width: 40px;
     height: 40px;
     padding: 5px;
-    margin-right: 8px;
+    margin-right: 2px;
 }
 
 img.instagram-icon {
     width: 34px;
     height: 34px;
     padding: 5px;
-    margin-right: 8px;
+    margin-right: 2px;
 }
 
 img.tiktok-icon {
     width: 34px;
     height: 34px;
     padding: 5px;
-    margin-right: 8px;
+    margin-right: 2px;
 }
 
 /* components starts here */
@@ -139,11 +139,12 @@ h2, h3 {
 
 a {
     text-decoration: underline;
-    /* color: inherit; */
+    color: var(--secondary-color);
 }
 
 a:hover {
     text-decoration: underline;
+    color: var(--primary-color);
     /* opacity: 0.7; */
 }
 
