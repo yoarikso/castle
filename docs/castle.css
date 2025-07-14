@@ -28,7 +28,7 @@
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
-  }
+}
 
 /* Root starts here */
 
@@ -38,24 +38,11 @@
     font-weight: 300;
     font-style: normal;
     padding: 2rem;
-}
 
-h2, h3 {
-    font-family: "Host Grotesk", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 600;
-    font-style: normal;
+    --primary-color: #ffdb58;
+    --secondary-color: #FACC15;
+    --tertiary-color: #EAB308;
 }
-
-.grid {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(5, minmax(auto, 10%));
-    grid-column-gap: 20px;
-    grid-row-gap: 20px;
-    justify-items: stretch;
-    align-items: start;
- }
 
 body {
     padding: 3rem;
@@ -66,4 +53,106 @@ footer {
     font-size: smaller;
 }
 
+/* css classes starts here */
 
+.grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(5, minmax(auto, 10%));
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    justify-items: stretch;
+    align-items: start;
+}
+
+img.profile-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 5px;
+    object-fit: cover;
+    display: block;
+    /* margin: 2rem auto; */
+}
+
+img.social-icon {
+    width: 34px;
+    height: 34px;
+    /* border-radius: 10px;
+    border: 1px solid black; */
+    /* filter: invert(65%) sepia(75%) saturate(426%) hue-rotate(4deg) brightness(97%) contrast(94%); */
+    /* filter: invert(72%) sepia(93%) saturate(436%) hue-rotate(358deg) brightness(103%) contrast(94%); */
+    padding: 5px;
+    margin-right: 8px;
+    /* filter: brightness(0) invert(1); */
+    transition: filter 0.2s ease;
+}
+
+img.x-icon {
+    width: 30px;
+    height: 30px;
+    padding: 5px;
+    margin-right: 8px;
+    filter: brightness(0) invert(1);
+}
+
+img.linkedin-icon {
+    width: 34px;
+    height: 34px;
+    padding: 5px;
+    margin-right: 8px;
+}
+
+img.youtube-icon {
+    width: 40px;
+    height: 40px;
+    padding: 5px;
+    margin-right: 8px;
+}
+
+img.instagram-icon {
+    width: 34px;
+    height: 34px;
+    padding: 5px;
+    margin-right: 8px;
+}
+
+img.tiktok-icon {
+    width: 34px;
+    height: 34px;
+    padding: 5px;
+    margin-right: 8px;
+}
+
+/* components starts here */
+
+
+h1, h2, h3, h4, h5, h6 {
+    color: var(--secondary-color);
+}
+
+h2, h3 {
+    font-family: "Host Grotesk", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+}
+
+a {
+    text-decoration: underline;
+    /* color: inherit; */
+}
+
+a:hover {
+    text-decoration: underline;
+    /* opacity: 0.7; */
+}
+
+a:has(img) {
+    text-decoration: none;
+    display: inline-block;
+    margin-right: 1rem;
+}
+
+a:has(img):hover .social-icon {
+    filter: brightness(10) saturate(100%) opacity(1) invert(1);
+}
